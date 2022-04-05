@@ -1,5 +1,4 @@
 import './App.css';
-//import FolderList from './components/FolderList';
 import {HashRouter, Routes, Route} from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import Error404 from './components/Error404';
@@ -14,10 +13,6 @@ function App() {
           <Route path="/" element={<LoginForm/>}/>
           <Route path="/:user/folders" element={<FoldersPage/>}/>
           <Route path="/:user/folders/:folder" element={<TasksPage/>}/>
-          {/* <Route path="/folders/:user" element={<FolderList/>}/> */}
-          {/* <Route path="/" element={<TasksPage/>}/>  */}
-          {/* <Route path="/" element={<FoldersPage/>}/>  */}
-          {/* <Route path="/folders/:userID/:foldername" element={<FolderList/>}/> */}
           <Route path="*" element={<Error404/>}/>
         </Routes>
       </HashRouter>     
