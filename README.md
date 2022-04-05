@@ -52,9 +52,9 @@ This app was built using following component family:
   |
 * |--> FolderPage --> FolderForm
   |             |---> FolderTable --> FolderTableRow
-* |--> TasksPage --> TasksForm
-               |---> TasksTable --> TasksTableRow
-                             |----> TasksModal
+* |--> TasksPage ---> TasksForm
+               |----> TasksTable ---> TasksTableRow
+                              |-----> TasksModal
 
 And the followings that are reusables:
 
