@@ -49,12 +49,11 @@ You can see and check as done all tasks in the folder, create new ones and edit 
 This app was built using following component family:
 
 * LoginForm
-* |
 * |--> FolderPage --> FolderForm
-* |             |---> FolderTable --> FolderTableRow
+* |____________ |---> FolderTable --> FolderTableRow
 * |--> TasksPage ---> TasksForm
-*              |----> TasksTable ---> TasksTableRow
-*                             |-----> TasksModal
+* ____________|-----> TasksTable ---> TasksTableRow
+* ____________________________|-----> TasksModal
 
 And the following that are reusables:
 
