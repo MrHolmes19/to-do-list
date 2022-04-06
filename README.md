@@ -50,10 +50,10 @@ This app was built using following component family:
 
 * LoginForm
 * --> FolderPage --> FolderForm
-*               ---> FolderTable --> FolderTableRow
+* --> FolderPage --> FolderTable --> FolderTableRow
 * --> TasksPage ---> TasksForm
-*              ----> TasksTable ---> TasksTableRow
-*              ----> TasksModal
+* --> TasksPage ---> TasksTable ---> TasksTableRow
+* --> TasksPage ---> TasksModal
 
 And the following that are reusables:
 
