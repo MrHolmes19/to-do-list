@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-eg2((*4i##!jynzz0avoik^zo@@cq$)%arb!6m44%g%yhg)u3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,8 +87,19 @@ WSGI_APPLICATION = 'todolist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3'
+        
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'core',
+        'USER':'root',
+        'PASSWORD': '123',
+        'HOST': os.getenv('MYSQL_HOST','localhost'),
+        'PORT': 3306,
+        'OPTIONS': {
+            'auth_plugin': 'mysql_native_password'
+        }
+        
     }
 }
 

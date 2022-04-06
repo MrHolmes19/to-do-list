@@ -1,3 +1,4 @@
 **/env
 env
 API/env
+db.sqlite3
