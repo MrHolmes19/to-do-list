@@ -49,14 +49,14 @@ You can see and check as done all tasks in the folder, create new ones and edit 
 This app was built using following component family:
 
 * LoginForm
-  |
+* |
 * |--> FolderPage --> FolderForm
-  |             |---> FolderTable --> FolderTableRow
+* |             |---> FolderTable --> FolderTableRow
 * |--> TasksPage ---> TasksForm
-               |----> TasksTable ---> TasksTableRow
-                              |-----> TasksModal
+*              |----> TasksTable ---> TasksTableRow
+*                             |-----> TasksModal
 
-And the followings that are reusables:
+And the following that are reusables:
 
 * Error404 (Page for pages not found)
 * Message
